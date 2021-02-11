@@ -1,0 +1,99 @@
+<div class="main">
+    <div class="main_title">People who need Your help the most</div>
+    <div class="pages">
+        <div class="page" *ngFor="let chil of childs">
+            <div class="page_1">
+                <a [routerLink]="[ '/home/'+chil.id ]">
+                    <img [src]="chil.image" alt="" class="page_photo">
+                </a>
+                <div class="place">{{ chil.place }}</div>
+                <a class="name" [routerLink]="[ 'home/'+chil.id ]">{{ chil.name }}</a>
+                <div class="page_text">{{ chil.description }} </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="offer">Have a speciall offer or want to support us?</div>
+<form>
+    <input type="button" value="Countact Us" class="offer_but" (click)="openModal(template)">
+</form>
+<div class="event">
+    <div class="container">
+        <a class="event_title" [routerLink]="[ '/event' ]">Recent events</a>
+        <div class="events">
+            <div class="events_1">
+                <div class="event_cont">
+                    <div>
+                        <img src="/assets/images/Rectangle18.png" alt="" class="event_photo">
+                    </div>
+                    <div class="event_info">
+                        <a class="event_date">August, 12</a>
+                        <a  class="event_text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві
+                            та
+                            дизайні.</a>
+                    </div>
+
+                </div>
+                <div class="event_cont">
+                    <div class="event_photo">
+                        <img src="/assets/images/Rectangle18(2).png" alt="">
+                    </div>
+                    <div class="event_info">
+                        <a href="#" class="event_date">August, 12</a>
+                        <a href="#" class="event_text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві
+                            та
+                            дизайні.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="events_2">
+                <div class="event_cont">
+                    <div class="event_photo">
+                        <img src="/assets/images/Rectangle18(1).png" alt="">
+                    </div>
+                    <div class="event_info">
+                        <a href="#" class="event_date">August, 12</a>
+                        <a href="#" class="event_text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві
+                            та
+                            дизайні.</a>
+                    </div>
+                </div>
+                <div class="event_cont">
+                    <div class="event_photo">
+                        <img src="/assets/images/Rectangle18(3).png" alt="">
+                    </div>
+                    <div class="event_info">
+                        <a href="#" class="event_date">August, 12</a>
+                        <a href="#" class="event_text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві
+                            та
+                            дизайні.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="show_more">
+        <a href="#" class="show_more_text">Show more</a>
+        <a href="#">
+            <img src="/assets/images/Vector5.png" alt="" class="logo333">
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+<ng-template #template>
+    <div class="modal-header modal-h">
+        <h4 class="modal-title pull-left">Contact us</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true"></span>
+        </button>
+    </div>
+    <div class="modal-body modal-b">
+        Our phone: 888-88-88 <br>
+        Our email: fundrising@gmail.com
+    </div>
+</ng-template>

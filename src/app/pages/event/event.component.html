@@ -1,0 +1,36 @@
+<div class="more_stories">
+    <div class="more_title cont_title">Recent events</div>
+    <div class="boxes">
+        <div class="box" *ngFor="let ee of events">
+            <div class="box_1" >
+                <a>
+                    <img [src]="ee.image" class="box_photo">
+                </a>
+                <a class="story_date">{{ ee.date  }}</a> <br>
+                <a  class="box_text">{{  ee.title }}</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="offer_2">
+    <div class="offer off">Have a speciall offer or want to support us?</div>
+    <form>
+        <input type="button" value="Countact Us" class="offer_but" (click)="openModal(template)">
+    </form>
+</div>
+
+
+<ng-template #template>
+    <div class="modal-header modal-h">
+        <h4 class="modal-title pull-left">Contact us</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true"></span>
+        </button>
+    </div>
+    <div class="modal-body modal-b">
+        Our phone: 888-88-88 <br>
+        Our email: fundrising@gmail.com
+    </div>
+</ng-template>
+

@@ -1,0 +1,20 @@
+<div class="container-fluid mt-2">
+  <div class="row">
+    <div class="col-2">
+      <div class="nav flex-column nav-pills">
+        <a class="nav-link bg-success text-dark mb-4" [routerLink]="[ './admin-story' ]" routerLinkActive="active">New story</a>
+        <a class="nav-link bg-success text-dark mb-4" [routerLink]="[ './admin-new-child' ]" routerLinkActive="active">New child</a>
+        <a class="nav-link bg-success text-dark mb-4" [routerLink]="[ './admin-donate' ]" routerLinkActive="active">Donation</a>
+        <a class="nav-link bg-success text-dark mb-4" [routerLink]="[ './admin-event' ]" routerLinkActive="active">New event</a>
+        <a class="nav-link bg-success text-dark" [routerLink]="[ './admin-help' ]" routerLinkActive="active">New help</a>
+      </div>
+      <button class="btn btn-warning mt-4" (click)="logout()">Logout</button>
+    </div>
+    <div class="col-10">
+      <div class="tab-content">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
+

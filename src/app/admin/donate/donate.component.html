@@ -1,0 +1,21 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Email</th>
+        <th scope="col">Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let donate of adminDonates; let i = index" >
+          <td>{{ donate.id}}</td>
+          <td>{{donate.email}}</td>
+          <td>{{donate.amount}}</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+    </tbody>
+  </table>

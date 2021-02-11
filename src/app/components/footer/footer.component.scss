@@ -1,0 +1,72 @@
+.footer{
+    height: 72px;
+    width: 100%;
+background: #1CB867;
+
+}
+.footer_1{
+    width: 1142px;
+    display: flex;
+    margin: 0 auto;
+}
+.footer_text{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+color: #FFFFFF;
+margin-top: 24px;
+
+margin-right: 900px;
+}
+.footer_photo{
+    width: 34px;
+    height: 34px;
+    margin: 23px 32px 0 0;
+}
+.footer_photo_2{
+    width: 30px;
+    height: 30px;
+    margin-top: 23px;
+}
+@media screen and (max-width: 1200px){
+    
+    .footer_1{
+        width: 940px;
+    }
+    .footer_text{
+    margin-right: 700px;
+    }
+@media screen and (max-width: 1000px){
+    .footer_1{
+        width: 750px;
+    }
+    .footer_text{
+        margin-top: 24px;
+        
+        margin-right: 570px;
+        }
+    }
+@media screen and (max-width: 800px){
+    .footer_1{
+        width: 520px;
+    }
+    .footer_text{
+        margin-top: 10px;
+        
+        margin-right: 420px;
+        }
+    }
+    @media screen and (max-width: 620px){
+        .footer_1{
+            width: 340px;
+        }
+        .footer_text{
+            margin-top: 18px;
+            
+            margin-right: 220px;
+            }
+        }
+    }
+

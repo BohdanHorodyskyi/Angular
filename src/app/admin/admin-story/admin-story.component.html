@@ -1,0 +1,90 @@
+<form class="form-inline">
+  <div class="form-group col-8">
+    <input type="search" class="form-control" placeholder="search here..">
+  </div>
+  <div class="col-2">
+    <button type="button" class="btn btn-success btn-block" (click)="openModal(template)">Add story</button>
+  </div>
+</form>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">Date</th>
+      <th scope="col">Image</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let ss of adminStories; let i = index">
+      <td>{{ss.id}}</td>
+      <td>{{ss.title}}</td>
+      <td>{{ss.date}}</td>
+      <td> <img [src]="ss.image" alt="" style="width:100px; height:60px"> </td>
+      <td>
+        <input type="button" value="edit" class="btn btn-warning" id="" (click)="editStory(template, ss)">
+      </td>
+      <td>
+        <input type="button" value="delete" class="btn btn-danger" id="" (click)="deleteStory(ss)">
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- <quill-editor></quill-editor> -->
+<ng-template #deleteImageConfirm>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Modal</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body text-center">
+    <p>Do you want to confirm?</p>
+    <button type="button" class="btn btn-default" (click)="confirmImage()">Yes</button>
+    <button type="button" class="btn btn-primary" (click)="declineImage()">No</button>
+  </div>
+</ng-template>
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Add story</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+
+      <div class="form-group">
+        <label for="sTitle">Title: </label>
+        <input [(ngModel)]="sTitle" name="sTitle" type="text" class="form-control" id="sTitle">
+      </div>
+      <div class="form-group">
+        <label for="sDate">Date: </label>
+        <input [(ngModel)]="sDate" name="sDate" type="text" class="form-control" id="sDate">
+      </div>
+      <div class="custom-file" *ngIf="!imageStatus">
+        <input (change)="uploadFile($event)" type="file" class="custom-file-input" id="image" required>
+        <label class="custom-file-label" for="image">Choose file...</label>
+      </div>
+      <div class="progress mb-3 mt-3" *ngIf="!imageStatus">
+        <div [style.width]="(uploadProgress | async) + '%'" class="progress-bar progress-bar-striped bg-warning"
+          role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <div class="childImage mb-3 mt-3" *ngIf="imageStatus">
+        <img [src]="sImage" alt="">
+        <span (click)="deleteImage(deleteImageConfirm)">
+          <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-trash" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+            <path fill-rule="evenodd"
+              d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+          </svg>
+        </span>
+      </div>
+      <button type="submit" class="btn btn-success mt-3" (click)="addStory()">Add</button>
+    </form>
+  </div>
+</ng-template>

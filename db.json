@@ -1,0 +1,123 @@
+{
+  "childs": [
+    {
+      "place": "Chicago, IL",
+      "name": "Kate",
+      "description": "Lorem Ipsum - це текст-\"риба\", що використовується в друкарстві та дизайні...",
+      "image": "https://firebasestorage.googleapis.com/v0/b/fundrising-f7bdf.appspot.com/o/images%2Fimage%202%20(1).png?alt=media&token=e9395d27-0363-48f4-81e6-eb51728d574a",
+      "id": 1
+    },
+    {
+      "place": "Los Angelos, CA",
+      "name": "Dilan",
+      "description": "Lorem Ipsum - це текст-\"риба\", що використовується в друкарстві та дизайні...",
+      "image": "https://firebasestorage.googleapis.com/v0/b/fundrising-f7bdf.appspot.com/o/images%2Fimage%202%20(2).png?alt=media&token=27dcb870-9132-4da8-b320-31714384e4d7",
+      "id": 2
+    },
+    {
+      "place": "New York",
+      "name": "Cindy",
+      "description": "Lorem Ipsum - це текст-\"риба\", що використовується в друкарстві та дизайні...",
+      "image": "https://firebasestorage.googleapis.com/v0/b/fundrising-f7bdf.appspot.com/o/images%2Fimage%202%20(3).png?alt=media&token=1ca4e40e-4246-4419-ba80-70ad23135f74",
+      "id": 3
+    },
+    {
+      "place": "London",
+      "name": "Ann",
+      "description": "Lorem Ipsum - це текст-\"риба\", що використовується в друкарстві та дизайні...",
+      "image": "https://firebasestorage.googleapis.com/v0/b/fundrising-f7bdf.appspot.com/o/images%2Fimg-04.jpeg?alt=media&token=12da1b29-db59-417b-b416-3b9906538f63",
+      "id": 5
+    },
+    {
+      "place": "Dublin",
+      "name": "Rose",
+      "description": "Lorem Ipsum - це текст-\"риба\", що використовується в друкарстві та дизайні...",
+      "image": "https://firebasestorage.googleapis.com/v0/b/fundrising-f7bdf.appspot.com/o/images%2Fchildrens-rights-girl2-homepage-2020-web-resized.jpeg?alt=media&token=03c1571a-e2f7-4862-b86f-864ec7b34765",
+      "id": 6
+    },
+    {
+      "place": "Paris",
+      "name": "Oscar",
+      "description": "Lorem Ipsum - це текст-\"риба\", що використовується в друкарстві та дизайні...",
+      "image": "https://firebasestorage.googleapis.com/v0/b/fundrising-f7bdf.appspot.com/o/images%2Fcr_home_background_child.jpeg?alt=media&token=80dfa682-61f1-4b28-b93e-2056c7cb4866",
+      "id": 7
+    }
+  ],
+  "donates": [
+    {
+      "email": "bohd@gmail",
+      "amount": 5000,
+      "id": 1
+    },
+    {
+      "email": "dfdf",
+      "amount": 546,
+      "id": 2
+    },
+    {
+      "email": "ffg",
+      "amount": 34,
+      "id": 3
+    }
+  ],
+  "stories": [
+    {
+      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ",
+      "date": "August 12",
+      "image": "https://firebasestorage.googleapis.com/v0/b/fundrising-f7bdf.appspot.com/o/images%2Fimage11(6).png?alt=media&token=e726d4ca-5749-4c0d-aa18-c3458b8a8640",
+      "id": 1
+    },
+    {
+      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ",
+      "date": "August 12",
+      "image": "https://firebasestorage.googleapis.com/v0/b/fundrising-f7bdf.appspot.com/o/images%2Fimage11(4).png?alt=media&token=bce5d591-de94-41b0-91ba-9eeee6b1d150",
+      "id": 2
+    },
+    {
+      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ",
+      "date": "August 12",
+      "image": "https://firebasestorage.googleapis.com/v0/b/fundrising-f7bdf.appspot.com/o/images%2Fimage11(5).png?alt=media&token=b5fbf598-384f-496a-9032-c668e748ee0d",
+      "id": 3
+    }
+  ],
+  "events": [
+    {
+      "title": "Lorem Ipsum - це текст-\"риба\", що використовується в друкарстві та дизайні.",
+      "date": "August 12",
+      "image": "https://firebasestorage.googleapis.com/v0/b/fundrising-f7bdf.appspot.com/o/images%2Fblogheader-fundraisingevent.jpeg?alt=media&token=97673843-941e-4ff6-a319-08ac97ac0ffa",
+      "id": 1
+    },
+    {
+      "title": "Lorem Ipsum - це текст-\"риба\", що використовується в друкарстві та дизайні.",
+      "date": "August 12",
+      "image": "https://firebasestorage.googleapis.com/v0/b/fundrising-f7bdf.appspot.com/o/images%2Ffundraising-event-ideas-boardgame-night-min.jpeg?alt=media&token=2d768f30-e731-43ca-88d1-bb5f2278bb08",
+      "id": 2
+    },
+    {
+      "title": "Lorem Ipsum - це текст-\"риба\", що використовується в друкарстві та дизайні.",
+      "date": "August 12",
+      "image": "https://firebasestorage.googleapis.com/v0/b/fundrising-f7bdf.appspot.com/o/images%2Flolol.jpeg?alt=media&token=28c2619e-ba73-423c-be84-3ed98b3cb968",
+      "id": 3
+    }
+  ],
+  "helping": [
+    {
+      "description": "Cindy should live and become the great scientist as she was dreaming to be",
+      "image": "https://firebasestorage.googleapis.com/v0/b/fundrising-f7bdf.appspot.com/o/images%2F1256220_landscape.jpeg?alt=media&token=482df7a5-588d-47d4-accb-1df89a90fdd8",
+      "place": "London",
+      "id": 1
+    },
+    {
+      "description": "Cindy should live and become the great scientist as she was dreaming to be",
+      "image": "https://firebasestorage.googleapis.com/v0/b/fundrising-f7bdf.appspot.com/o/images%2Fo-sick-child-facebook.jpeg?alt=media&token=768dbcde-8c08-4163-930d-209a0ca9525f",
+      "place": "Kyiv",
+      "id": 2
+    },
+    {
+      "description": "Cindy should live and become the great scientist as she was dreaming to be",
+      "image": "https://firebasestorage.googleapis.com/v0/b/fundrising-f7bdf.appspot.com/o/images%2Fimage11.png?alt=media&token=26736ab1-0270-492e-8a22-ba94a4ce0fef",
+      "place": "Chicago",
+      "id": 3
+    }
+  ]
+}

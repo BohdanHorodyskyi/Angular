@@ -1,0 +1,49 @@
+<div class="section animateSection animated">
+    <div class="container hidden-xs hidden-sm">
+        <div class="row">
+            <div class="col-md-12 col-lg-l2">
+                <div class="emptySpace20"></div>
+                <div class="smallSlideLeft">
+                    <a [routerLink]="['/stories' ]" class="home breadcrumb ">
+                        <span>Stories</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row ">
+            <div class="col-lg-12">
+                <div class="productDetailFlex">
+                    <div class="swiperMainWrapper mobileFluidSwiper buttonPosition-2">
+                        <div class="swiper-container swiper-swiper-unique-id-0 initialized swiper-container-horizontal">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swiper-slide-active" style="width: 520px;">
+                                    <div class="imgWrapper">
+                                        <img class="productDetail photo" [src]="story.image" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="emptySpace-md45 emptySpace-xs20"></div>
+                    </div>
+                    <div class="productDetailContent">
+                        <div class="productOderDetail smallSlideLeft">
+                            <h1 class="h2 as">{{story?.title | titlecase}}</h1>
+                            <div class="d-flex">
+                                <div class="productSize">
+                                    <div class="imgWrapper">
+                                    </div>
+                                    <p>Date:</p><span class="totalWeight">{{story?.date}} </span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
