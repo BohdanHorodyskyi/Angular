@@ -1,0 +1,497 @@
+.donate{
+    width: 100%;
+min-height: 680px;
+background: #FBF8F6;
+}
+.donate_inside{
+    width: 1199px;
+    margin: 0 auto;
+    padding-top: 34px;
+}
+.donate_title{  
+    font-family: 'Open Sans', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 42px;
+
+color: #000000;
+margin-bottom: 34px;
+}
+.donation{
+    display: flex;
+}
+.donate_photo{
+    width: 789px;
+height: 446px;
+margin-right: 30px;
+}
+.donate_box_title{
+    display: flex;
+}
+.donate_but{
+    width: 326px;
+height: 48px;
+background: #1CB867;
+box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
+border-radius: 6px;
+padding-top: 5px;
+display: block;
+text-decoration: none;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+outline: none;
+border: none;
+color: #FFFFFF;
+margin-top: 120px;
+margin-bottom: 31px;
+}
+.money_box{
+    padding: 0 1em;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #7E7E7E;
+margin-bottom: 10px;
+}
+.fill{
+    font-size:1em;
+    border: 1px solid #DFDFDF;
+box-sizing: border-box;
+border-radius: 8px;
+width: 326px;
+height: 158px;
+margin-bottom: 21px;
+}
+.money_boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.money_boxes_1{
+    display: block;
+    text-decoration: none;
+    width: 138px;
+height: 34px;
+border: 1px solid #0E6B3B;
+box-sizing: border-box;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+margin-bottom: 8px;
+color: #0E6B3B;
+padding-top: 8px;
+
+}
+.donate_place{
+    display: flex;
+    margin-top: 23px;
+}
+.donate_place_vector{
+    width: 14px;
+    height: 20px;
+    margin-right: 11px;
+    margin-bottom: 6px;
+}
+.donate_place_town{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+text-decoration: none;
+color: #000000;
+margin-top: 2px;
+}
+
+.tabs_line_1{
+    width: 100%;
+height: 0px;
+border: 1px solid #E0E0E0;
+background: #E0E0E0;
+}
+
+.tabs{
+    height: 80px;
+    margin-bottom: 39px;
+    display: flex;
+}
+.tabs_inside{
+    width: 1199px;
+    margin: 0 auto;
+    padding: 52px 0 0 20px;
+}
+.tab{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+color: #7E7E7E;
+text-decoration: none;
+margin-right: 69px;
+}
+
+
+.content{
+    display: flex;
+    width: 1199px;
+    margin: 0 auto;
+    margin-bottom: 194px;
+}
+.content_left{
+    width: 781px;
+    margin: 39px 38px 0 0;
+}
+.content_left_1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: #000000;
+margin-bottom: 24px;
+}
+.content_left_2_dis{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 22px;
+    padding-left: 20px;
+}
+.blue_line{
+ width: 785px;
+height: 1px;
+background: #1CB867;
+}
+.content_left_2_vector{
+    background-image: url(/assets/images/Vector10.png) ;
+    width: 120px;
+    height: 28px;
+    margin-right: 25px;
+}
+.content_left_2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-style: italic;
+font-weight: bold;
+font-size: 18px;
+line-height: 24px;
+color: #0E6B3B;
+}
+.content_left_3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: #000000;
+
+margin-top: 26px;
+margin-bottom: 34px;
+}
+.content_left_photo{
+    width: 467px;
+height: 311px;
+margin: 0 auto;
+display: block;
+}
+.content_left_4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: #000000;
+
+margin: 49px 0 37px;
+}
+
+.offer{
+    margin: 0 auto 37px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 33px;
+
+text-align: center;
+
+color: #000000;
+}
+
+.offer_but{
+    width: 225px;
+height: 48px;
+background: #1CB867;
+box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
+border-radius: 6px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+display: block;
+line-height: 26px;
+text-align: center;
+text-decoration: none;
+color: #FFFFFF;
+margin: 0 auto;
+outline: none;
+border: none;
+
+margin-bottom: 120px;
+}
+.event{
+    width: 100%;
+    min-height: 544px;
+background: #FBF8F6;
+padding-top: 56px;
+}
+.container{
+    width: 982px;
+    margin: 0px auto;
+}
+.event_title{
+    text-decoration: none;
+    display: block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+
+color: #0E6B3B;
+margin-bottom: 47px;
+}
+.events{
+    display: flex;
+}
+.event_cont{
+    display: flex;
+}
+.event_photo{
+    width: 148px;
+    height: 98px;
+    margin-right: 15px;
+    margin-bottom: 41px;
+}
+.event_date{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+display: block;
+text-decoration: none;
+color: #0E6B3B;
+margin: 5px 0 8px;
+}
+.event_text{
+    width: 226px;
+    height: 59px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+display: block;
+text-decoration: none;
+color: #000000;
+margin-right: 91px;
+}
+.show_more{
+    width: 170px;
+    margin: 68px auto 0px;
+}
+
+.show_more_text{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+text-decoration: none;
+color: #0D6135;
+margin-right: 40px;
+}
+.logo333{
+    height: 15px;
+    width: 10px;
+    margin: -5px 0 0;
+}
+.modal-b{
+    background: rgba(222, 255, 238, 0.35);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.modal-h{
+    color: white;
+    background-color: #1CB867;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.donate_but2{
+    margin: 30px auto;
+}
+
+
+
+@media screen and (max-width: 1200px){
+    .content{
+        display: flex;
+        width: 960px;
+        margin: 0 auto;
+        margin-bottom: 194px;
+    }
+    .donate_inside{
+        width: 960px;
+    }
+    .donate_photo{
+        width: 629px;
+    height: 346px;
+    }
+    .donate_but{
+    margin-top: 70px;
+    margin-bottom: 31px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .container{
+        width: 750px;
+        margin: 0px auto;
+    }
+    .content{
+        width: 750px;
+        margin-bottom: 194px;
+        }
+    .event_text{
+        width: 126px;
+        
+    }
+    .donate_inside{
+        width: 750px;
+    }
+    .donate_photo{
+        width: 750px;
+    height: 386px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    }
+    .donation{
+        flex-wrap: wrap;
+    }
+    .fill{
+        width: 526px;
+        height: 158px;
+    }
+    .donate_but{
+        width: 526px;
+    height: 48px;
+    margin-top: 60px;
+    margin-bottom: 31px;
+    }
+    .donate_box{
+        margin: 0 auto;;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        width: 620px;
+    }
+    .content{
+        width: 630px;
+        margin-bottom: 194px;
+        }
+    .event_text{
+        width: 106px;
+        margin-right: 41px;
+    }
+    .content_left{
+        width: 630px;
+        margin: 39px 38px 0 0;
+    }
+    .blue_line{
+     width: 630px;
+    }
+    .donate_inside{
+        width: 620px;
+    }
+    .donation{
+        flex-wrap: wrap;
+    }
+    .donate_photo{
+        width: 600px;
+    height: 346px;
+    }
+    .donate_but{
+        width: 500px;
+    height: 48px;
+    margin-top: 35px;
+    margin-bottom: 31px;
+    }
+    .donate_box{
+        margin: 0 auto;;
+    }
+
+}
+@media screen and (max-width: 640px){
+    .container{
+        width: 300px;
+    }
+    .event_text{
+        width: 140px;
+        margin-right: 31px;
+    }
+    .events{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .content{
+        width: 320px;
+        margin-bottom: 194px;
+        }
+     .content_left{
+            width: 300px;
+            margin: 39px 38px 0 0;
+        }
+    .blue_line{
+         width: 300px;
+        }
+    .content_left_photo{
+            width: 300px;
+        }
+    .donate_inside{
+            width: 320px;
+        }
+    .donation{
+            flex-wrap: wrap;
+        }
+    .donate_photo{
+            width: 320px;
+        height: 146px;
+        }
+    .donate_but{
+            width: 320px;
+        height: 48px;
+        margin-top: 35px;
+        margin-bottom: 31px;
+        }
+    .donate_box{
+            margin: 0 auto;;
+        }
+        .fill{
+            width: 320px;
+height: 158px;
+        }
+    
+}

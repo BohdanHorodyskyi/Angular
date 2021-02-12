@@ -1,0 +1,311 @@
+<div class="donate">
+    <div class="donate_inside" *ngFor="let help of helpings"> 
+        <div class="donate_title">{{help.description}}</div>
+        <div class="donation">
+            <div>
+                <img [src]="help.image" class="donate_photo">
+            </div>
+            <div class="donate_box">
+                <form>
+                    <input type="button" value="Make donation" class="donate_but" (click)="openModal(template2)">
+                </form>
+                <fieldset class="fill">
+                    <legend class="money_box">Quick donations</legend>
+                    <div class="money_boxes">
+                        <a class="money_boxes_1" (click)="openModal(template3)">$ 120</a>
+                        <a class="money_boxes_1" (click)="openModal(template4)">$ 240</a>
+                        <a class="money_boxes_1" (click)="openModal(template5)">$ 550</a>
+                        <a class="money_boxes_1" (click)="openModal(template6)">$ 1200</a>
+                        <a class="money_boxes_1" (click)="openModal(template7)">$ 2400</a>
+                        <a class="money_boxes_1" (click)="openModal(template8)">$ 3200</a>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div class="donate_place">
+            <a>
+                <img src="/assets/images/Vectorr.png" class="donate_place_vector">
+            </a>
+            <a class="donate_place_town">{{help.place}}</a>
+        </div>
+    </div>
+
+</div>
+<div class="tabs_line_1"></div>
+<div class="tabs_line_1"></div>
+<div class="content">
+    <div class="content_left">
+        <div class="content_left_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <b>quis nostrud exercitation</b>
+            ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. <b>Excepteur sint occaecat</b> cupidatat non
+            proident, sunt
+            in culpa qui officia deserunt mollit anim id est laborum.</div>
+        <div class="blue_line"></div>
+        <div class="content_left_2_dis">
+            <div class="content_left_2_vector">
+            </div>
+            <div class="content_left_2">But I must explain to you how all this mistaken idea of denouncing pleasure
+                and
+                praising pain was born and I will give you a complete account of the system, and expound the actual
+                teachings of the great explorer of the truth, the master-builder of human happiness. </div>
+        </div>
+
+        <div class="blue_line"></div>
+        <div class="content_left_3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+            in culpa qui officia deserunt mollit anim id est laborum.</div>
+        <div>
+            <img src="/assets/images/image111.png" alt="" class="content_left_photo">
+        </div>
+        <div class="content_left_4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+            in culpa qui officia deserunt mollit anim id est laborum.</div>
+        <div class="blue_line"></div>
+    </div>
+</div>
+
+<div class="offer_2">
+    <div class="offer off">Have a speciall offer or want to support us?</div>
+    <form>
+        <input type="button" value="Countact Us" class="offer_but" (click)="openModal(template)">
+    </form>
+</div>
+<div class="event">
+    <div class="container">
+        <a class="event_title" [routerLink]="[ '/event' ]">Recent events</a>
+        <div class="events">
+            <div class="events_1">
+                <div class="event_cont">
+                    <div>
+                        <img src="/assets/images/Rectangle18.png" alt="" class="event_photo">
+                    </div>
+                    <div class="event_info">
+                        <a class="event_date">August, 12</a>
+                        <a  class="event_text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві
+                            та
+                            дизайні.</a>
+                    </div>
+
+                </div>
+                <div class="event_cont">
+                    <div class="event_photo">
+                        <img src="/assets/images/Rectangle18(2).png" alt="">
+                    </div>
+                    <div class="event_info">
+                        <a href="#" class="event_date">August, 12</a>
+                        <a href="#" class="event_text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві
+                            та
+                            дизайні.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="events_2">
+                <div class="event_cont">
+                    <div class="event_photo">
+                        <img src="/assets/images/Rectangle18(1).png" alt="">
+                    </div>
+                    <div class="event_info">
+                        <a href="#" class="event_date">August, 12</a>
+                        <a href="#" class="event_text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві
+                            та
+                            дизайні.</a>
+                    </div>
+                </div>
+                <div class="event_cont">
+                    <div class="event_photo">
+                        <img src="/assets/images/Rectangle18(3).png" alt="">
+                    </div>
+                    <div class="event_info">
+                        <a href="#" class="event_date">August, 12</a>
+                        <a href="#" class="event_text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві
+                            та
+                            дизайні.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="show_more">
+        <a href="#" class="show_more_text">Show more</a>
+        <a href="#">
+            <img src="/assets/images/Vector5.png" alt="" class="logo333">
+        </a>
+    </div>
+</div>
+
+<ng-template #template>
+    <div class="modal-header modal-h">
+        <h4 class="modal-title pull-left">Contact us</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true"></span>
+        </button>
+    </div>
+    <div class="modal-body modal-b">
+        Our phone: 888-88-88 <br>
+        Our email: fundrising@gmail.com
+    </div>
+</ng-template>
+
+<ng-template #template2>
+    <div class="modal-header modal-h">
+        <h4 class="modal-title pull-left ">Make donation</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body modal-b">
+        <form #donateForm="ngForm" (ngSubmit)="addDonate(donateForm)">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" [(ngModel)]="userEmail" name="userEmail" class="form-control"
+                     placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="number">Amount of contribution</label>
+                <input type="number" class="form-control" required [(ngModel)]="userAmount" name="userAmount">
+            </div>
+            <input [disabled]="donateForm.invalid" type="submit" value="Donate" class="donate_but donate_but2">
+        </form>
+    </div>
+</ng-template>
+
+
+
+<ng-template #template3>
+    <div class="modal-header modal-h">
+        <h4 class="modal-title pull-left ">Make donation</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body modal-b">
+        <form #donateForm="ngForm" (ngSubmit)="addDonate(donateForm)">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" [(ngModel)]="userEmail" name="userEmail" class="form-control"
+                     placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="number">Amount of contribution</label>
+                <input type="text" class="form-control" required [(ngModel)]="userAmount120" name="userAmount">
+            </div>
+            <input [disabled]="donateForm.invalid" type="submit" value="Donate" class="donate_but donate_but2">
+        </form>
+    </div>
+</ng-template>
+<ng-template #template4>
+    <div class="modal-header modal-h">
+        <h4 class="modal-title pull-left ">Make donation</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body modal-b">
+        <form #donateForm="ngForm" (ngSubmit)="addDonate(donateForm)">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" [(ngModel)]="userEmail" name="userEmail" class="form-control"
+                     placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="number">Amount of contribution</label>
+                <input type="text" class="form-control" required [(ngModel)]="userAmount240" name="userAmount">
+            </div>
+            <input [disabled]="donateForm.invalid" type="submit" value="Donate" class="donate_but donate_but2">
+        </form>
+    </div>
+</ng-template>
+<ng-template #template5>
+    <div class="modal-header modal-h">
+        <h4 class="modal-title pull-left ">Make donation</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body modal-b">
+        <form #donateForm="ngForm" (ngSubmit)="addDonate(donateForm)">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" [(ngModel)]="userEmail" name="userEmail" class="form-control"
+                     placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="number">Amount of contribution</label>
+                <input type="text" class="form-control" required [(ngModel)]="userAmount550" name="userAmount">
+            </div>
+            <input [disabled]="donateForm.invalid" type="submit" value="Donate" class="donate_but donate_but2">
+        </form>
+    </div>
+</ng-template>
+<ng-template #template6>
+    <div class="modal-header modal-h">
+        <h4 class="modal-title pull-left ">Make donation</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body modal-b">
+        <form #donateForm="ngForm" (ngSubmit)="addDonate(donateForm)">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" [(ngModel)]="userEmail" name="userEmail" class="form-control"
+                     placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="number">Amount of contribution</label>
+                <input type="text" class="form-control" required [(ngModel)]="userAmount1200" name="userAmount">
+            </div>
+            <input [disabled]="donateForm.invalid" type="submit" value="Donate" class="donate_but donate_but2">
+        </form>
+    </div>
+</ng-template>
+<ng-template #template7>
+    <div class="modal-header modal-h">
+        <h4 class="modal-title pull-left ">Make donation</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body modal-b">
+        <form #donateForm="ngForm" (ngSubmit)="addDonate(donateForm)">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" [(ngModel)]="userEmail" name="userEmail" class="form-control"
+                     placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="number">Amount of contribution</label>
+                <input type="text" class="form-control" required [(ngModel)]="userAmount2400" name="userAmount">
+            </div>
+            <input [disabled]="donateForm.invalid" type="submit" value="Donate" class="donate_but donate_but2">
+        </form>
+    </div>
+</ng-template>
+<ng-template #template8>
+    <div class="modal-header modal-h">
+        <h4 class="modal-title pull-left ">Make donation</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body modal-b">
+        <form #donateForm="ngForm" (ngSubmit)="addDonate(donateForm)">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" [(ngModel)]="userEmail" name="userEmail" class="form-control"
+                     placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="number">Amount of contribution</label>
+                <input type="text" class="form-control" required [(ngModel)]="userAmount3200" name="userAmount">
+            </div>
+            <input [disabled]="donateForm.invalid" type="submit" value="Donate" class="donate_but donate_but2">
+        </form>
+    </div>
+</ng-template>

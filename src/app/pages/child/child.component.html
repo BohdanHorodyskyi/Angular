@@ -1,0 +1,78 @@
+<div class="section animateSection animated">
+    <div class="container hidden-xs hidden-sm">
+        <div class="row">
+            <div class="col-md-12 col-lg-l2">
+                <div class="emptySpace20"></div>
+                <ul class="breadcrumb smallSlideLeft">
+                    <li>
+                        <a [routerLink]="['/home' ]" class="home">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a><span>{{child.name | titlecase}}</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row ">
+            <div class="col-lg-12">
+                <div class="productDetailFlex">
+                    <div class="swiperMainWrapper mobileFluidSwiper buttonPosition-2">
+                        <div class="swiper-container swiper-swiper-unique-id-0 initialized swiper-container-horizontal">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swiper-slide-active" style="width: 520px;">
+                                    <div class="imgWrapper">
+                                        <img class="productDetail photo" [src]="child.image" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="emptySpace-md45 emptySpace-xs20"></div>
+                    </div>
+                    <div class="productDetailContent">
+                        <div class="productOderDetail smallSlideLeft">
+                            <h1 class="h2 as">{{child?.name | titlecase}}</h1>
+                            <p>{{child.description}}</p>
+                            <div class="d-flex">
+                                <div class="productSize">
+                                    <div class="imgWrapper">
+                    </div>
+                                    <p>Place:</p><span class="totalWeight">{{child?.place}} </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form >
+                            <input type="button" value="Make donation" class="donate_but" (click)="openModal(template2)">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<ng-template #template2>
+    <div class="modal-header modal-h">
+        <h4 class="modal-title pull-left ">Make donation</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body modal-b">
+        <form #donateForm="ngForm" (ngSubmit)="addDonate(donateForm)">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" [(ngModel)]="userEmail" name="userEmail" class="form-control"
+                     placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="number">Amount of contribution</label>
+                <input type="number" class="form-control" required [(ngModel)]="userAmount" name="userAmount">
+            </div>
+            <input [disabled]="donateForm.invalid" type="submit" value="Donate" class="donate_but donate_but2">
+        </form>
+    </div>
+</ng-template>
