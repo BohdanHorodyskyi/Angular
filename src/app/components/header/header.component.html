@@ -1,0 +1,79 @@
+<header>
+  <div class="header_context">
+    <ul class="context_1">
+      <li><a [routerLink]="['/home' ]" class="logo">Home</a></li>
+      <li><a [routerLink]="[ '/stories' ]" class="context_text">Success stories</a></li>
+      <li><a [routerLink]="[ '/event']" class="context_text">Events</a></li>
+      <li><a [routerLink]="[ '/helping']" class="button_1">Start helping</a></li>
+      <li>
+        <div *ngIf="!loginStatus">
+          <a (click)="loginModal(loginForm)" class="context_tex log_but">Log in</a>
+        </div>
+      </li>
+      <li>
+        <div *ngIf="loginStatus" class="user-block headerSection">
+          <a [routerLink]="[ '/'+loginUrl ]" class="context_text">{{ loginName }}</a>
+        </div>
+      </li>
+    </ul>
+    <div class="main_text">Crowd funding <br> for saving lives
+    </div>
+    <div class="bottom_text">Start saving people today
+    </div>
+    <a [routerLink]="[ '/helping']" class="button2">Start helping</a>
+    <a [routerLink]="[ '/stories' ]" class="learn">Learn more about project</a> <br>
+  </div>
+</header>
+
+
+
+<ng-template #loginForm>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left" [textContent]="!switch ? 'Login Form': 'Register Form'"></h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="loginBlock" *ngIf="!switch">
+      <form (ngSubmit)="loginUser()">
+        <div class="form-group">
+          <label for="userEmail">Email address</label>
+          <input type="email" class="form-control" id="userEmail" [(ngModel)]="userEmail" name="userEmail">
+        </div>
+        <div class="form-group">
+          <label for="userPassword">Password</label>
+          <input type="password" class="form-control" id="userPassword" [(ngModel)]="userPassword" name="userPassword">
+        </div>
+        <button type="submit" class="btn btn-success">Login</button>
+        <div class="form-group mt-3">
+          <a (click)="switchForm()">Don't have an Account? Register Now</a>
+        </div>
+      </form>
+    </div>
+    <div class="registerBlock" *ngIf="switch">
+      <form (ngSubmit)="registerUser()">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" class="form-control" id="firstName" [(ngModel)]="firstName" name="firstName">
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" class="form-control" id="lastName" [(ngModel)]="lastName" name="lastName">
+        </div>
+        <div class="form-group">
+          <label for="userEmail">Email address</label>
+          <input type="email" class="form-control" id="userEmail" [(ngModel)]="userEmail" name="userEmail">
+        </div>
+        <div class="form-group">
+          <label for="userPassword">Password</label>
+          <input type="text" (click)="signOut()" class="form-control" id="userPassword" [(ngModel)]="userPassword" name="userPassword">
+        </div>
+        <button type="submit" class="btn btn-success">Register</button>
+        <div class="form-group mt-3">
+          <a (click)="switchForm()">Do have an Account? Login Now</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</ng-template>
